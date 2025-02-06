@@ -1,17 +1,19 @@
-/* 白天背景图 */
-.hope-ui-light {
-  background-image: url("https://api.vvhan.com/api/wallpaper/views") !important;
-  background-repeat: no-repeat;
+/* 网站背景 */
+#web_bg {
+  background: url("https://api.yimian.xyz/img?type=moe");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: center;
+  z-index: -1;
 }
 
-/* 夜间背景图 */
-.hope-ui-dark {
-  background-image: url("https://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png") !important;
-  background-repeat: no-repeat;
+/* 夜间模式背景 */
+[data-theme='dark'] #web_bg {
+  background: url("https://api.ixiaowai.cn/api/api.php");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: center;
+  z-index: -1;
 }
